@@ -4,7 +4,6 @@ A simple, good-looking parallax website for college clubs.
 
 🎥 [Demo Video](https://youtu.be/jW0WJeiPxYk)
 
-🔗 [GitHub Repository](https://github.com/ragulnathMB/StudentClubs)
 
 # screenshots
 
