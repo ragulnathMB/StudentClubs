@@ -1,0 +1,64 @@
+.main{
+    background-color: black;
+    width: 100vw;
+    min-height: 100vh;
+}
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    background-color: transparent;
+}
+.menuModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: gold;
+    border: 3px solid gold;
+    border-radius: 12px;
+    padding: 30px 50px;
+    z-index: 9999;
+    box-shadow: 0 0 30px gold;
+    animation: fadeIn 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+.menuimg{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.menuModal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  
+  .menuModal li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .menuModal li:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

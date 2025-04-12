@@ -1,0 +1,201 @@
+.aboutContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d4af37; /* Gold text color */
+    background-color: #121212; /* Dark background for the entire container */
+  }
+  
+  .profileCard {
+    background-color: #1a1a1a; /* Slightly lighter dark background for card */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.2); /* Gold shadow */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
+  }
+  
+  .headerSection {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #d4af37; /* Gold color for title */
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .underline {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, #d4af37, #ffd700); /* Gold gradient */
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  .profileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .profileSection {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .avatarContainer {
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .avatarContainer {
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4af37, #ffd700); /* Gold gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Black text on gold background */
+    font-size: 3rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5); /* Gold glow */
+    border: 3px solid #000; /* Black border */
+  }
+  
+  .infoContainer {
+    flex: 1;
+  }
+  
+  .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffd700; /* Bright gold for name */
+    margin-bottom: 0.3rem;
+  }
+  
+  .department {
+    font-size: 1.2rem;
+    color: #d4af37; /* Standard gold */
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .year {
+    font-size: 1.1rem;
+    color: #c0a030; /* Slightly darker gold */
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .contactSection {
+    margin-top: 1rem;
+  }
+  
+  .contactItem {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contactLabel {
+    font-weight: 600;
+    color: #d4af37; /* Gold */
+    margin-right: 0.5rem;
+  }
+  
+  .contactValue {
+    color: #bbb; /* Light gray for contact values */
+  }
+  
+  .bioSection {
+    margin-bottom: 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold divider */
+    padding-top: 1.5rem;
+  }
+  
+  .bioTitle {
+    font-size: 1.4rem;
+    color: #d4af37; /* Gold */
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .bioText {
+    line-height: 1.6;
+    color: #bbb; /* Light gray for better readability on dark background */
+    margin-bottom: 1rem;
+  }
+  
+  .interestsSection {
+    border-top: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold divider */
+    padding-top: 1.5rem;
+  }
+  
+  .interestsTitle {
+    font-size: 1.4rem;
+    color: #d4af37; /* Gold */
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .interestTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .interestTag {
+    background-color: #000; /* Black background */
+    color: #d4af37; /* Gold text */
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(212, 175, 55, 0.5); /* Gold border */
+  }
+  
+  .interestTag:hover {
+    background-color: #d4af37; /* Gold background on hover */
+    color: #000; /* Black text on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(212, 175, 55, 0.5); /* Gold glow on hover */
+  }
+  
+  .developerNote {
+    text-align: center;
+    font-style: italic;
+    color: #d4af37; /* Gold */
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold divider */
+  }
+  
+  /* Add a subtle golden animation to the avatar */
+  @keyframes goldPulse {
+    0% {
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+  }
+  
+  .avatar {
+    animation: goldPulse 2s infinite;
+  }
