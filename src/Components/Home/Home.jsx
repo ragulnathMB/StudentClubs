@@ -45,7 +45,7 @@ import designimg1 from '../../assets/designimg1.png'
 import cultureimg1 from '../../assets/cultureimg1.png'
 import { Link } from 'react-router-dom';
 
-// Sample clubs (your existing data)
+
 const sampleClubs = [
   {
     "url": zero1,
@@ -271,7 +271,7 @@ const Home = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       
-      // Banner ribbons parallax
+     
       if (leftRibbRef.current && rightRibbRef.current) {
         leftRibbRef.current.style.transform = `translateX(${-scrollY * 0.9}px)`;
         rightRibbRef.current.style.transform = `translateX(${scrollY * 0.9}px)`;
@@ -279,13 +279,13 @@ const Home = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    // Trigger once on mount to set initial positions
+    
     handleScroll();
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Get 16 clubs for feature sections
+  
   const featuredClubs = sampleClubs.slice(0, 14);
 
   return (
@@ -313,7 +313,7 @@ const Home = () => {
 
       
 
-      {/* Regular Club Sections */}
+      
       <div className={styles.textc}>
         <p>Technical Clubs</p>
       </div>
@@ -346,7 +346,7 @@ const Home = () => {
             <ClubItem key={index} {...club} />
           ))}
       </div>
-      {/* Featured Clubs with Parallax Effects */}
+      
       <div className={styles.paraclubFeaturedSection}>
         <div className={styles.textc}>
           <p>Featured Clubs</p>

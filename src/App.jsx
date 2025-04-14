@@ -3,7 +3,7 @@ import { useState } from 'react'
 import styles from './App.module.css'
 import menu from './assets/menu.png'
 import Home from './Components/Home/Home'
-import ClubDetails from './Components/ClubPage/ClubPage' // create this component
+import ClubDetails from './Components/ClubPage/ClubPage' 
 import About from './Components/About/About'
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
           <div className={styles.menuModal}>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Clubs</Link></li> {/* Example link */}
-              <li><Link to="/about">About</Link></li> {/* Optional future route */}
+              <li><Link to="/">Clubs</Link></li> 
+              <li><Link to="/about">About</Link></li> 
             </ul>
           </div>
         )}

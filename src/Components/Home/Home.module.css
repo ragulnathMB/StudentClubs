@@ -69,7 +69,7 @@
   
   .clubItem:hover {
     transform: scale(1.05);
-    box-shadow: 0 30px 40px -10px rgba(255, 215, 0, 0.7); /* bottom spotlight */
+    box-shadow: 0 30px 40px -10px rgba(255, 215, 0, 0.7);
     z-index: 5;
   }
   
@@ -164,15 +164,15 @@
     will-change: transform;
   }
   
-  /* Starting positions for the border images */
+ 
   .paraclubBorderUp {
-    transform: translateX(-100%); /* Start from extreme right */
+    transform: translateX(-100%); 
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   }
   
   .paraclubBorderDown {
-    transform: translateX(-100%); /* Start from extreme left */
+    transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   }
@@ -185,7 +185,7 @@
     margin: 40px 0;
   }
   
-  /* Starting positions for the content images */
+  
   .paraclubcont img:first-child {
     transform: translateX(-50px);
     transition: transform 0.3s ease-out;
@@ -196,7 +196,7 @@
     transition: transform 0.3s ease-out;
   }
   
-  /* When in viewport */
+  
   .paraclub.in-view .paraclubBorderUp,
   .paraclub.in-view .paraclubBorderDown {
     transform: translateX(0);
@@ -215,12 +215,12 @@
       flex-direction: column;
     }
   }
-  /* Parallax featured section */
+  
 .paraclubFeaturedSection {
   margin: 80px 0;
 }
 
-/* Individual paraclub component */
+
 .paraclub {
   position: relative;
   width: 100vw;
@@ -266,7 +266,7 @@
   transition: transform 0.8s ease;
 }
 
-/* Club item specific to paraclub */
+
 .paraclubcont .clubItem {
   width: 50%;
   display: flex;
@@ -345,7 +345,7 @@
   }
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .paraclubcont {
     flex-direction: column;

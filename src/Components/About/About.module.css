@@ -3,17 +3,17 @@
     margin: 0 auto;
     padding: 2rem 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #d4af37; /* Gold text color */
-    background-color: #121212; /* Dark background for the entire container */
+    color: #d4af37; 
+    background-color: #121212;
   }
   
   .profileCard {
-    background-color: #1a1a1a; /* Slightly lighter dark background for card */
+    background-color: #1a1a1a; 
     border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.2); /* Gold shadow */
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.2);
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
+    border: 1px solid rgba(212, 175, 55, 0.3);
   }
   
   .headerSection {
@@ -23,7 +23,7 @@
   
   .title {
     font-size: 2.2rem;
-    color: #d4af37; /* Gold color for title */
+    color: #d4af37; 
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
@@ -31,7 +31,7 @@
   .underline {
     height: 4px;
     width: 80px;
-    background: linear-gradient(90deg, #d4af37, #ffd700); /* Gold gradient */
+    background: linear-gradient(90deg, #d4af37, #ffd700); 
     margin: 0 auto;
     border-radius: 2px;
   }
@@ -65,15 +65,15 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #d4af37, #ffd700); /* Gold gradient */
+    background: linear-gradient(135deg, #d4af37, #ffd700); 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000; /* Black text on gold background */
+    color: #000; 
     font-size: 3rem;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5); /* Gold glow */
-    border: 3px solid #000; /* Black border */
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5); 
+    border: 3px solid #000; 
   }
   
   .infoContainer {
@@ -83,20 +83,20 @@
   .name {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #ffd700; /* Bright gold for name */
+    color: #ffd700; 
     margin-bottom: 0.3rem;
   }
   
   .department {
     font-size: 1.2rem;
-    color: #d4af37; /* Standard gold */
+    color: #d4af37;
     font-weight: 600;
     margin-bottom: 0.3rem;
   }
   
   .year {
     font-size: 1.1rem;
-    color: #c0a030; /* Slightly darker gold */
+    color: #c0a030;
     font-weight: 500;
     margin-bottom: 1rem;
   }
@@ -111,41 +111,41 @@
   
   .contactLabel {
     font-weight: 600;
-    color: #d4af37; /* Gold */
+    color: #d4af37; 
     margin-right: 0.5rem;
   }
   
   .contactValue {
-    color: #bbb; /* Light gray for contact values */
+    color: #bbb;
   }
   
   .bioSection {
     margin-bottom: 2rem;
-    border-top: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold divider */
+    border-top: 1px solid rgba(212, 175, 55, 0.3); 
     padding-top: 1.5rem;
   }
   
   .bioTitle {
     font-size: 1.4rem;
-    color: #d4af37; /* Gold */
+    color: #d4af37; 
     margin-bottom: 1rem;
     font-weight: 600;
   }
   
   .bioText {
     line-height: 1.6;
-    color: #bbb; /* Light gray for better readability on dark background */
+    color: #bbb;
     margin-bottom: 1rem;
   }
   
   .interestsSection {
-    border-top: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold divider */
+    border-top: 1px solid rgba(212, 175, 55, 0.3); 
     padding-top: 1.5rem;
   }
   
   .interestsTitle {
     font-size: 1.4rem;
-    color: #d4af37; /* Gold */
+    color: #d4af37; 
     margin-bottom: 1rem;
     font-weight: 600;
   }
@@ -157,33 +157,33 @@
   }
   
   .interestTag {
-    background-color: #000; /* Black background */
-    color: #d4af37; /* Gold text */
+    background-color: #000;
+    color: #d4af37; 
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.2s ease;
-    border: 1px solid rgba(212, 175, 55, 0.5); /* Gold border */
+    border: 1px solid rgba(212, 175, 55, 0.5); 
   }
   
   .interestTag:hover {
-    background-color: #d4af37; /* Gold background on hover */
-    color: #000; /* Black text on hover */
+    background-color: #d4af37; 
+    color: #000; 
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(212, 175, 55, 0.5); /* Gold glow on hover */
+    box-shadow: 0 4px 8px rgba(212, 175, 55, 0.5);
   }
   
   .developerNote {
     text-align: center;
     font-style: italic;
-    color: #d4af37; /* Gold */
+    color: #d4af37;
     font-size: 0.9rem;
     padding: 1rem;
-    border-top: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold divider */
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
   }
   
-  /* Add a subtle golden animation to the avatar */
+  
   @keyframes goldPulse {
     0% {
       box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);

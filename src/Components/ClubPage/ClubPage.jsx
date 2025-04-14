@@ -252,10 +252,10 @@ function ClubDetails() {
     const { title } = useParams();
     const [activeTab, setActiveTab] = useState('about');
     
-    // Find the club data
+    
     const club = sampleClubs.find(c => c.title === decodeURIComponent(title));
     
-    // Scroll to top when component mounts
+    
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -272,7 +272,7 @@ function ClubDetails() {
       );
     }
   
-    // Example event data structure - in a real app, this would come from your database
+    
     const clubEvents = [
       {
         id: 1,
@@ -311,7 +311,7 @@ function ClubDetails() {
       }
     ];
   
-    // Example members data
+    
     const clubMembers = {
       leaders: [
         { name: "Aditya Sharma", role: "President", year: "Final Year", department: "Computer Science" },

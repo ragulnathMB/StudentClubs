@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  /* Hero Section */
+  
   .heroSection {
     position: relative;
     height: 60vh;
@@ -111,7 +111,7 @@
     color: #ffffff;
   }
   
-  /* Tabs Section */
+  
   .tabsContainer {
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@
     border-radius: 2px 2px 0 0;
   }
   
-  /* Content Container */
+  
   .contentContainer {
     max-width: 1200px;
     margin: 0 auto;
@@ -169,7 +169,7 @@
     border-bottom: 1px solid #333;
   }
   
-  /* About Section */
+  
   .aboutSection {
     margin-bottom: 40px;
   }
@@ -259,7 +259,7 @@
     font-weight: 500;
   }
   
-  /* Members Section */
+ 
   .membersSection {
     margin-bottom: 40px;
   }
@@ -369,7 +369,7 @@
     margin-right: 12px;
   }
   
-  /* Events Section */
+ 
   .eventsSection {
     margin-bottom: 40px;
   }
@@ -513,7 +513,7 @@
     padding: 20px;
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 992px) {
     .clubTitle {
       font-size: 2.5rem;

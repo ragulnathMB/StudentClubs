@@ -13,7 +13,7 @@ const ParaClub = ({ club, leftImage, rightImage, index }) => {
   
   useEffect(() => {
     const handleScroll = () => {
-      // Check if paraclub section is in viewport
+      
       if (paraclubRef.current) {
         const rect = paraclubRef.current.getBoundingClientRect();
         const isInView = (
@@ -24,31 +24,31 @@ const ParaClub = ({ club, leftImage, rightImage, index }) => {
         if (isInView) {
           paraclubRef.current.classList.add(styles.inView);
           
-          // Calculate how far into the viewport the element is
+          
           const viewportPercentage = 1 - (rect.top / window.innerHeight);
           const clampedPercentage = Math.max(0, Math.min(1, viewportPercentage));
           
-          // Apply transformations based on scroll position
+          
           if (borderUpRef.current) {
-            const moveX = (1 - clampedPercentage) * 100; // Start at 100% right, move to center
+            const moveX = (1 - clampedPercentage) * 100; 
             borderUpRef.current.style.transform = `translateX(${moveX}%)`;
             borderUpRef.current.style.opacity = clampedPercentage;
           }
           
           if (borderDownRef.current) {
-            const moveX = (1 - clampedPercentage) * -100; // Start at 100% left, move to center
+            const moveX = (1 - clampedPercentage) * -100; 
             borderDownRef.current.style.transform = `translateX(${moveX}%)`;
             borderDownRef.current.style.opacity = clampedPercentage;
           }
           
-          // Move the images based on scroll position
+         
           if (leftImageRef.current) {
-            const moveX = (1 - clampedPercentage) * -50; // Move from left to right
+            const moveX = (1 - clampedPercentage) * -50;
             leftImageRef.current.style.transform = `translateX(${moveX}px)`;
           }
           
           if (rightImageRef.current) {
-            const moveX = (1 - clampedPercentage) * 50; // Move from right to left
+            const moveX = (1 - clampedPercentage) * 50; 
             rightImageRef.current.style.transform = `translateX(${moveX}px)`;
           }
         } else {
@@ -58,7 +58,7 @@ const ParaClub = ({ club, leftImage, rightImage, index }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    // Trigger once on mount to set initial positions
+    
     handleScroll();
     
     return () => window.removeEventListener('scroll', handleScroll);
